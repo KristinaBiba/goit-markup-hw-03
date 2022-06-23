@@ -1,0 +1,242 @@
+:root {
+  --main-text-color: #757575;
+  --main-title-text-color: #212121;
+  --accent-text-color: #2196F3;
+  --adress-text-color: rgba(255, 255, 255, 0.6);
+  --additional-text-color: #ffffff;
+  --hero-background-color: #2F303A;
+  --main-background-color: #ffffff;
+  --button-hover: #188CE8;
+  --header-logo-color: #000000;
+  --button-background: #F5F4FA;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--main-text-color);
+  background-color: var(--main-background-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+a {
+  text-decoration: none;
+}
+ li {
+  list-style-type: none; 
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 1px solid forestgreen;
+  background: red; */
+}
+/* Стили хедера */
+.logo {
+  color: var(--accent-text-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.header-logo {
+  color: var(--header-logo-color);
+}
+.main-nav,
+.nav-address {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.main-nav a {
+  color: var(--main-title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  }
+.main-nav .activity{
+  color: var(--accent-text-color);
+}
+.main-nav a:hover,
+.main-nav a:focus,
+.nav-address a:focus,
+.nav-address a:hover,
+.footer-address a:focus,
+.footer-address a:hover {
+  color: var(--accent-text-color);
+}
+.nav-address a {
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+/* Стили Студии */
+.hero {
+  background-color: var(--hero-background-color);
+  color: var(--additional-text-color);
+}
+.hero h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-top: 200px;
+}
+.order {
+  color: var(--additional-text-color);
+  background-color: var(--accent-text-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  border: 1px solid var(--header-logo-color);
+  border-radius: 4px;
+  min-width: 200px;
+  height: 50px;
+  text-align: center;
+  margin-bottom: 200px;
+}
+.order:hover,
+.order:focus {
+  background-color: var(--button-hover);
+  border-color: transparent;
+}
+.section .title {
+  color: var(--main-title-text-color);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.feature-list {
+  margin-top: 94px;
+  margin-bottom: 0;
+}
+.feature .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.feature p{
+  line-height: 1.71;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.team {
+background-color: var(--button-background);
+}
+
+.container-works {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.title.works {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.team p {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.section.team img {
+  margin-bottom: 30px;
+}
+/* Стили футера */
+footer {
+  background-color: var(--hero-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-logo {
+  color: var(--additional-text-color);
+}
+.address {
+  color: var(--additional-text-color);
+  font-style: normal;
+  line-height: 1.71;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.footer-address a {
+  color: var(--adress-text-color);
+  font-style: normal;
+  line-height: 1.71;
+  margin-top: 9px;
+}
+
+/* Стили Портфолио */
+.section.examples {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.button {
+  color: var(--main-title-text-colo);
+  background-color: var(--button-background);
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: inherit;
+  text-align: center;
+  padding: 6px 22px;
+  border-radius: 4px;
+    margin-bottom: 50px;
+}
+.button:focus,
+.button:hover {
+  color: var(--additional-text-color);
+  background-color: var(--accent-text-color);
+}
+.examples .title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+.examples p {
+  font-size: 16px;
+  line-height: 1.88;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.examples img {
+  margin-bottom: 20px;
+}
+
